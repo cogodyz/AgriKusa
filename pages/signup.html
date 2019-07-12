@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>AgriKusa</title>
+        <link rel="icon" href="../img/logo.png" />
+        <link rel="stylesheet" href="../styles/fontello.css">
+        <link rel="stylesheet" href="../styles/main.css">
+        <link rel="stylesheet" href="../styles/menu.css">
+        <link rel="stylesheet" href="../styles/form.css">
+    </head>
+    <body>
+        <header>
+            <div class="cont">
+                <a href="../index.html">
+                    <img id="imgLogo" src="../img/logo.png" alt="logo AgriKusa" />
+                </a> 
+                <input type="checkbox" id="menu-bar">
+                <label class="icon-menu" for="menu-bar"></label>
+                <nav class="menu">
+                    <a href="../index.html">Inicio</a>
+                    <a href="#">Productos</a>
+                    <a href="#">Productores</a>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <form onSubmit="validate()" action="#">
+                <h2>REGISTRO</h2>
+                <label for="txtName"></label>
+                <input type="text" maxlength="50"
+                minlength="2" id="txtName" 
+                placeholder="Nombre Completo" required/>
+                <span id="nameValidator" style="color:red"></span>
+
+                <label for="txtRut"></label>
+                <input id="txtRut" type="text"
+                onkeyup="modifyText()" 
+                placeholder="Ingrese Rut" required />
+          
+                <label for="txtDate"></label>
+                <input type="date" max="2001-01-01" id="txtDate"
+                required/>
+
+                <label for="txtPhone"></label>
+                <input type="number"  id="txtPhone"
+                placeholder="Teléfono de Contacto"/>
+
+                <label for="txtMail"></label>
+                <input type="email" id="txtMail" 
+                placeholder="Correo Electrónico" required>
+
+                <h4>Región</h4>
+                <label for="txtRegion"> </label>
+                <select id="txtRegion" oninput="selectCity()">     
+                </select>
+                <br>
+                <h4>Ciudad</h4>
+                <label for="txtCity"></label>
+                <select id="txtCity"></select>
+                <br>
+     
+                <input type="button" value="GUARDAR" id="button">   
+            </form>
+        </main>
+
+            <footer>
+                <div class="cont">
+                    <p class="copy">Agrikusa &copy; 2019</p>
+                    <a href="tel:5698374932">
+                        <br>+569 8 374 493 2
+                    </a>
+                    <div class="social">
+                        <a class="icon-facebook-circled" href="#"></a>
+                        <a class="icon-google-plus-circle" href="#"></a>
+                        <a class="icon-instagram-circled" href="#"></a>
+                        <a class="icon-mail-circled" href="#"></a>
+                    </div>
+                </div>
+            </footer>
+            <script src="../js/citySelector.js"></script>
+            <script src="../js/main.js"></script>
+    </body>
+</html>

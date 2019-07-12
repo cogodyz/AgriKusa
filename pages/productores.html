@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>AgriKusa</title>
+        <link rel="icon" href="../img/logo.png" />
+        <link rel="stylesheet" href="../styles/fontello.css">
+        <link rel="stylesheet" href="../styles/main.css">
+        <link rel="stylesheet" href="../styles/menu.css">
+        <link rel="stylesheet" href="../styles/jquery.gmaps.css">
+        <script src="http://code.jquery.com/jquery-3.2.1.js"></script>
+        <script src="../js/jquery.gmaps.js"></script>
+
+        <style>
+ 
+            .gmaps {
+            height:500px;
+            width: 100%;
+            }
+        </style>
+
+       
+    </head>
+    <body>
+        <header>
+            <div class="cont">
+                <a href="../index.html">
+                    <img id="imgLogo" src="../img/logo.png" alt="logo AgriKusa" />
+                </a> 
+                <input type="checkbox" id="menu-bar">
+                <label class="icon-menu" for="menu-bar"></label>
+                <nav class="menu">
+                    <a href="../index.html">Inicio</a>
+                    <a href="/pages/productos.html">Productos</a>
+                    <a href="clientes.html">Clientes</a>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <div data-key="AIzaSyDwNBXmHBDQ29JWsRH8gwNVkf7mM0-flaI"
+                data-control-zoom="true"
+                data-control-type="true"
+                data-control-scale="true"
+                data-control-streetview="true"
+                data-control-rotate="true"
+                data-event-mousewheel="true"
+                
+                data-zoom="14" role="map" class="gmaps">
+                
+                <!-- items de ubicaciones -->
+                <div
+                    data-id="1"
+                    data-lat="-33.5128019"
+                    data-lng="-70.7608147"
+                    class="marker">
+                    <div class="map-card">
+                    <h1>Pedro González</h1>
+                    <p>Dirección: La Colonia, #32, Maipú.</p>
+                    <p>Teléfono: +56937382172</p>
+                    <p>e-Mail: p.gonz@email.com</p>
+                    </div>
+                    </div>
+                    
+                    <div
+                    data-id="2"
+                    data-lat="-33.5097856"
+                    data-lng="-70.7668357"
+                    class="marker">
+                    <div class="map-card">
+                    <h1>Juan Pablo</h1>
+                    <p>Dirección: Cam. Rinconada, #833,Maipú.</p>
+                    <p>Teléfono: +56753223344</p>
+                    <p>e-Mail: jp@email.com</p>
+                    </div>
+                    </div>
+                    
+                    <div
+                    data-id="3"
+                    data-lat="-33.511918"
+                    data-lng="-70.7582459"
+                    class="marker">
+                    <div class="map-card">
+                    <h1>Agrikusa</h1>
+                    <p>Dirección: Pajaritos, #445</p>
+                    <p>Teléfono: +56753223344</p>
+                    <p>e-Mail:godoy@gmail.com</p>
+                    <img src="../img/logo.png"><img/>
+                    </div>
+
+                    <div
+                    data-id="4"
+                    data-lat="-33.511225"
+                    data-lng="-70.7587782"
+                    class="marker">
+                    <div class="map-card">
+                    <h1>Manuel Agricola</h1>
+                    <p>Dirección: Padre Hurtado, #518</p>
+                    <p>Teléfono: +56936172833</p>
+                    <p>e-Mail:m.agri@gmail.com</p>
+                    <img src="../img/manuel.png"><img/>
+                    </div>
+                    <!-- fin datos de ubicación -->
+                </div>
+                
+            </div>
+        </main>
+        <footer>
+            <div class="cont">
+                <p class="copy">Agrikusa &copy; 2019</p>
+                <a href="tel:5698374932">
+                    <br>+569 8 374 493 2
+                </a>
+                <div class="social">
+                    <a class="icon-facebook-circled" href="#"></a>
+                    <a class="icon-google-plus-circle" href="#"></a>
+                    <a class="icon-instagram-circled" href="#"></a>
+                    <a class="icon-mail-circled" href="#"></a>
+                </div>
+            </div>
+
+        </footer>
+        <script>
+            $(document).ready(function () {
+            $('.gmaps').gmaps();
+            });
+        </script>
+
+        
+    </body>
+</html>

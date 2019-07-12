@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>AgriKusa</title>
+        <link rel="icon" href="img/logo.png" />
+        <link rel="stylesheet" href="styles/fontello.css">
+        <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="styles/menu.css">
+        <link rel="stylesheet" href="styles/banner.css">
+        <link rel="stylesheet" href="styles/blog.css">
+        <link rel="stylesheet" href="styles/carousel.css">
+        <link rel="stylesheet" href="styles/galery.css">
+        <link rel="stylesheet" href="styles/flexslider.css" type="text/css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+        <script src="js/jquery.flexslider.js"></script>
+        <script src="js/jquery.fancybox.js"></script>
+        <link rel="stylesheet" type="text/css" href="styles/jquery.fancybox.css" media="screen" />
+
+    </head>
+    <body>
+        <header>
+            <div class="cont">
+                <a href="index.html">
+                    <img id="imgLogo" src="img/logo.png" alt="logo mis perris" />
+                </a> 
+               <input type="checkbox" id="menu-bar">
+               <label class="icon-menu" for="menu-bar"></label>
+               <nav class="menu">
+                    <a href="#">Iniciar Sesión</a>
+                    <a href="pages/clientes.html">Clientes</a>
+                    <a href="pages/productores.html">Productores</a>
+                    <a href="pages/productos.html">Productos</a>
+                    <a href="pages/signup.html">REGÍSTRATE</a>
+               </nav>
+            </div>
+        </header>
+
+        <main>
+            <div class="carousel">
+                <div class="flexslider">
+                    <ul class="slides">
+                        <li>
+                            <img src="img/img1.png" alt="Estamos siempre a tu disposición" />
+                            <p class="flex-caption">"Estamos siempre a tu disposición"</p>
+                        </li>
+                        <li>
+                            <img src="img/img2.png" alt="Un lugar donde puedes encontrar tus productos"/>
+                            <p class="flex-caption">"Un lugar donde puedes encontrar tus productos"</p>
+                        </li>
+                        <li>
+                            <img src="img/img3.jpg" alt="Puedes ver nuestras ubicaciones"/>
+                            <p class="flex-caption">"Puedes ver nuestras ubicaciones"</p>
+                        </li>
+                        <li>
+                            <img src="img/img4.jpg" alt="Conoce nuestros distintos productores"/>
+                            <p class="flex-caption">"Conoce nuestros distintos productores"</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+    
+
+            <div class="blog">
+                <div class="cont">
+                    <article id="rescue">
+                        <h2><b>¿QUIENES SOMOS?</b></h2>
+                        <h3>AGRIKUSA</h3>
+                        <h3>______</h3>
+                        <h4>Somos una página donde hacemos la venta de productos agrícolas más accesibles, donde </h4>
+                        <br>
+                        <h4>la comunicación con clientes es mucho más efectiva.</h4>
+                        <img id="imgRescate" src="img/img5.jpg" alt="agrikusaaa">
+                    </article>
+
+                    <article id="crowd">
+                        <h2><b>ACERCA DE LOS USUARIOS</b></h2>
+                        <h3>PRODUCTORES</h3>
+                        <h3>______</h3>
+                        <h4>Como productores damos a conocer nuestros productos para así generar una venta más óptima y</h4>
+                        <br>
+                        <h4>que los clientes puedan conocer nuestros productos y más de nosotros.</h4>
+                        <img id="imgCrowdfunding" src="img/img6.jpg" alt="productores2">
+                        <a href="productores.html"><b>PRODUCTOS</b></a>
+                    </article>
+                </div>
+            </div>
+
+            <div class="galery">
+                <div class="photos">
+                    <a class="fancybox" href="img/choclo.jpg" data-fancybox-group="gallery" title="Choclos">
+                        <img src="img/choclo.jpg" alt="" />
+                    </a> 
+                    <a class="fancybox" href="img/tomate.jpg" data-fancybox-group="gallery" title="Tomates">
+                        <img src="img/tomate.jpg" alt="" />
+                    </a> 
+                    <a class="fancybox" href="img/naranjas.jpg" data-fancybox-group="gallery" title="Naranjas">
+                        <img src="img/naranjas.jpg" alt="" />
+                    </a>
+                    <a class="fancybox" href="img/aji.jpg" data-fancybox-group="gallery" title="Ají">
+                        <img src="img/aji.jpg" alt="" />
+                    </a> 
+                    <a class="fancybox" href="img/papas.jpg" data-fancybox-group="gallery" title="Papas">
+                        <img src="img/papas.jpg" alt="" />
+                    </a> 
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="cont">
+                <p class="copy">Agrikusa &copy; 2019</p>
+                <a href="tel:5698374932">
+                    <br>+569 8 374 493 2
+                </a>
+                <div class="social">
+                    <a class="icon-facebook-circled" href="#"></a>
+                    <a class="icon-google-plus-circle" href="#"></a>
+                    <a class="icon-instagram-circled" href="#"></a>
+                    <a class="icon-mail-circled" href="#"></a>
+                </div>
+            </div>
+
+        </footer>
+        <script>
+            $(window).load(function() {
+                $('.flexslider').flexslider({
+                    animation: "slide"
+                });
+            });
+            </script>
+        
+            <script>
+                $(document).ready(function() {
+                    $('.fancybox').fancybox({ keyboard : true });
+                 
+                });
+            </script>
+    </body>
+</html>
